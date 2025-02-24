@@ -1,4 +1,4 @@
-package main
+package countries
 
 type ISO3CountryCode string
 
