@@ -16,8 +16,6 @@ go get github.com/KGKallasmaa/countries
 ## Usage
 
 ```go
-package main
-
 import (
     "fmt"
     "github.com/KGKallasmaa/countries"
@@ -25,11 +23,11 @@ import (
 
 func main() {
     // Using ISO-2 country codes
-    countryCode := ISO2CountryCodeUS
+    countryCode := countries.ISO2CountryCodeUS
     fmt.Println(countryCode) // Outputs: US
 
     // Using ISO-3 country codes
-    countryCode3 := ISO3CountryCodeUSA
+    countryCode3 := countries.ISO3CountryCodeUSA
     fmt.Println(countryCode3) // Outputs: USA
 }
 ```
