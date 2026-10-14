@@ -17,6 +17,7 @@ const (
 	ISO2CountryCodeAM ISO2CountryCode = "AM"
 	ISO2CountryCodeAW ISO2CountryCode = "AW"
 	ISO2CountryCodeAU ISO2CountryCode = "AU"
+	ISO2CountryCodeAT ISO2CountryCode = "AT"
 	ISO2CountryCodeAZ ISO2CountryCode = "AZ"
 	ISO2CountryCodeBS ISO2CountryCode = "BS"
 	ISO2CountryCodeBH ISO2CountryCode = "BH"
@@ -42,6 +43,7 @@ const (
 	ISO2CountryCodeCV ISO2CountryCode = "CV"
 	ISO2CountryCodeKH ISO2CountryCode = "KH"
 	ISO2CountryCodeCM ISO2CountryCode = "CM"
+	ISO2CountryCodeCA ISO2CountryCode = "CA"
 	ISO2CountryCodeKY ISO2CountryCode = "KY"
 	ISO2CountryCodeCF ISO2CountryCode = "CF"
 	ISO2CountryCodeTD ISO2CountryCode = "TD"
@@ -250,7 +252,9 @@ const (
 	ISO2CountryCodeZM ISO2CountryCode = "ZM"
 	ISO2CountryCodeZW ISO2CountryCode = "ZW"
 	ISO2CountryCodeCD ISO2CountryCode = "CD"
+	// XK is user-assigned, not an officially assigned ISO 3166-1 code.
 	ISO2CountryCodeXK ISO2CountryCode = "XK"
+	// CS is a withdrawn ISO 3166-1 code.
 	ISO2CountryCodeCS ISO2CountryCode = "CS"
 )
 
@@ -267,6 +271,7 @@ var (
 		ISO2CountryCodeAQ,
 		ISO2CountryCodeAR,
 		ISO2CountryCodeAS,
+		ISO2CountryCodeAT,
 		ISO2CountryCodeAU,
 		ISO2CountryCodeAW,
 		ISO2CountryCodeAX,
@@ -292,6 +297,7 @@ var (
 		ISO2CountryCodeBW,
 		ISO2CountryCodeBY,
 		ISO2CountryCodeBZ,
+		ISO2CountryCodeCA,
 		ISO2CountryCodeCC,
 		ISO2CountryCodeCD,
 		ISO2CountryCodeCF,
@@ -304,7 +310,6 @@ var (
 		ISO2CountryCodeCN,
 		ISO2CountryCodeCO,
 		ISO2CountryCodeCR,
-		ISO2CountryCodeCS,
 		ISO2CountryCodeCU,
 		ISO2CountryCodeCV,
 		ISO2CountryCodeCW,
@@ -499,7 +504,6 @@ var (
 		ISO2CountryCodeVU,
 		ISO2CountryCodeWF,
 		ISO2CountryCodeWS,
-		ISO2CountryCodeXK,
 		ISO2CountryCodeYE,
 		ISO2CountryCodeYT,
 		ISO2CountryCodeZA,

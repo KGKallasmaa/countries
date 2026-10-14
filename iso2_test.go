@@ -37,3 +37,29 @@ func Test_ISO2CountryNaming(t *testing.T) {
 		}
 	}
 }
+
+func Test_ISO2CountryMembership(t *testing.T) {
+	tests := []struct {
+		code ISO2CountryCode
+		want bool
+	}{
+		{ISO2CountryCodeCA, true},
+		{ISO2CountryCodeAT, true},
+		{ISO2CountryCodeCS, false},
+		{ISO2CountryCodeXK, false},
+	}
+	for _, tt := range tests {
+		t.Run(string(tt.code), func(t *testing.T) {
+			found := false
+			for _, code := range AllISO2Countries {
+				if code == tt.code {
+					found = true
+					break
+				}
+			}
+			if found != tt.want {
+				t.Errorf("AllISO2Countries contains %q = %t, want %t", tt.code, found, tt.want)
+			}
+		})
+	}
+}
